@@ -60,11 +60,9 @@ const decrement = (id) => {
 function loadCart() {
     let basket = JSON.parse(localStorage.getItem("data")) || 0;
     document.querySelector('.cartAmount').textContent = basket;
-    document.getElementById(id).querySelector('.quantity').innerHTML = basket;
 }
 
 loadCart();
-
 
 
 
